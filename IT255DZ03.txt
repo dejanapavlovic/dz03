@@ -1,0 +1,51 @@
+<html>
+
+    <head>
+    
+    <meta charset="utf-8">
+        <title>IT255DZ03</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+     $("#dodaj").click(function(){
+         var addcontrols="<tr>"
+                        addcontrols+="<td><input type='text'name='zaposleniime' placeholder='Unesite ime '></td>"
+                        addcontrols+="<td><input type='text'name='zaposleniprezime' placeholder='Unesite prezime '></td>"
+                        addcontrols+="<td><input type='text'name='zaposlenipoz' placeholder='Unesite poziciju '></td>"
+                        addcontrols+="<td><input type='text'name='zaposleniplata' placeholder='Unesite platu '></td>"
+                        addcontrols+="</tr>";
+                        $("table tbody").append(addcontrols);
+     });   
+    });
+
+</script>
+    </head>
+<body>
+<h1>BP Zaposleni</h1><br>
+<hr><br>
+<table border="1">
+    
+<thead style="color: burlywood" >
+    <tr>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Pozicija</th>
+        <th>Plata</th>
+    </tr>
+    
+</thead> 
+<tbody>
+</tbody>
+<tfoot>
+    <tr>
+        <td><input type="button" value="Dodaj zaposlenog" id="dodaj"></td>
+    </tr>
+</tfoot>
+    
+</table>    
+    
+</body>
+    
+</html>
